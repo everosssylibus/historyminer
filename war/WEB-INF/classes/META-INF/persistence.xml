@@ -10,6 +10,8 @@
             <property name="datanucleus.NontransactionalRead" value="true"/>
             <property name="datanucleus.NontransactionalWrite" value="true"/>
             <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="javax.persistence.query.timeout" value="5000" />
+            <property name="datanucleus.datastoreWriteTimeout" value="10000" />
         </properties>
     </persistence-unit>
 </persistence>
